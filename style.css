@@ -17,9 +17,12 @@
     height: 100vh;
     /* background-color: orange; */
     /* background: linear-gradient(to bottom, rgb(151, 2, 151), rgb(255, 166, 0)); */
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(17, 12, 77), rgba(71, 0, 71),  rgb(151, 2, 151), rgb(255, 166, 0));
+    background-size: 200% 200%;
     position: absolute;
     animation-name: fade;
     animation-duration: 120s;
+    transition: ease;
     animation-fill-mode: forwards;
 }
 
@@ -60,27 +63,42 @@
     25% {opacity: 50%;}
     50% {opacity: 25%;}
     100% {opacity: 0%;} */
-    0% {background: linear-gradient(to bottom, rgb(151, 2, 151), rgb(255, 166, 0));}
+    /* 0% {background: linear-gradient(to bottom, rgb(151, 2, 151), rgb(255, 166, 0));}
     25% {background: linear-gradient(to top, rgba(255, 166, 0), rgb(71, 0, 71));}
     50% {background: linear-gradient(to bottom, rgba(71, 0, 71), rgb(17, 12, 77));}
-    100% {background: linear-gradient(to top,  rgb(17, 12, 77), rgb(0, 0, 0));}
+    100% {background: linear-gradient(to top,  rgb(17, 12, 77), rgb(0, 0, 0));} */
+    0% {
+		background-position: 25% 50%;
+    }
+    25% {
+        background-position: 100% 75 /*25% 50%*/;
+    }
+    50% {
+        background-position: 75% 50% /*50% 75%*/;
+    }
+	75% {
+		background-position:  /*100% 75%*/;
+	}
+	100% {
+		background-position: 0% 25%;
+    }
 }
 
 .moon {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.829);
     position: absolute;
-    top: 10px;
-    right: 50px;
+    top: 20px;
+    right: 70px;
     animation: moonrise;
     animation-duration: 120s;
 }
 
 @keyframes moonrise {
-    from {transform: translateY(800px)}
-    to {transform: translateY(50px)}
+    0% {opacity: 0%}
+    100% {opacity: 100%}
     /* 0% {transform: translateX(500px)}
     25% {opacity: 50%;}
     50% {opacity: 25%;}
