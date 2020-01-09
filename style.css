@@ -5,35 +5,44 @@
 }
 
 .box {
-    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
 }
+
 
 .sunset {
     width: 100vw;
     height: 100vh;
     background-color: orange;
-    animation-delay: 5s;
     animation-name: fade;
-    animation-duration: 60s;
+    animation-duration: 30s;
+    position: absolute;
+   
 }
 
 .twilight {
     width: 100vw;
     height: 100vh;
-    background-color: gray;
-    animation-delay: 60s;
+    background-color: purple;
+    animation-delay: 15s;
     animation-name: fade;
-    animation-duration: 60s;
+    animation-duration: 30s;
+    position: absolute;
+    
 }
 
 .dark {
     width: 100vw;
     height: 100vh;
     background-color: black;
-    animation-delay: 120s;
+    animation-delay: 30s;
     animation-name: fade;
     animation-duration: 60s;
+    position: absolute;
+    
 }
+
 
 @keyframes fade {
     0% {opacity: 100%;}
