@@ -14,7 +14,8 @@
 .sunset {
     width: 100vw;
     height: 100vh;
-    background-color: orange;
+    /* background-color: orange; */
+    background: linear-gradient(to bottom, rgb(151, 2, 151), rgb(255, 166, 0));
     animation-name: fade;
     animation-duration: 30s;
     position: absolute;
@@ -24,7 +25,8 @@
 .twilight {
     width: 100vw;
     height: 100vh;
-    background-color: purple;
+    /* background-color: purple; */
+    background: linear-gradient(to bottom, rgb(71, 0, 71), rgb(199, 147, 51));
     animation-delay: 15s;
     animation-name: fade;
     animation-duration: 30s;
@@ -35,7 +37,8 @@
 .dark {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    /* background-color: rgb(82, 82, 82); */
+    background: linear-gradient(to bottom, rgb(82, 82, 82), rgb(0, 0, 0));
     animation-delay: 30s;
     animation-name: fade;
     animation-duration: 60s;
