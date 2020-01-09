@@ -16,55 +16,59 @@
     width: 100vw;
     height: 100vh;
     /* background-color: orange; */
-    background: linear-gradient(to bottom, rgb(151, 2, 151), rgb(255, 166, 0));
-    animation-name: fade;
-    animation-duration: 60s;
+    /* background: linear-gradient(to bottom, rgb(151, 2, 151), rgb(255, 166, 0)); */
     position: absolute;
+    animation-name: fade;
+    animation-duration: 120s;
     animation-fill-mode: forwards;
 }
 
-.twilight {
+/* .twilight {
     width: 100vw;
     height: 100vh;
-    /* background-color: purple; */
-    background: linear-gradient(to bottom, rgb(71, 0, 71), rgb(199, 147, 51));
-    animation-delay: 45s;
+    background-color: purple;
+    background: linear-gradient(to bottom, rgb(71, 0, 71), rgb(43, 36, 139));
+    animation-delay: 30s;
     animation-name: fade;
     animation-duration: 70s;
     position: absolute;
     animation-fill-mode: forwards;
 
-}
+} */
 
-.dark {
+/* .dark {
     width: 100vw;
     height: 100vh;
-    /* background-color: rgb(82, 82, 82); */
+    background-color: rgb(82, 82, 82);
     background: linear-gradient(to bottom, rgb(82, 82, 82), rgb(0, 0, 0));
     animation-delay: 55s;
     animation-name: fade-to-black;
     animation-duration: 120s;
-    /* animation-direction: reverse; */
+    animation-direction: reverse;
     position: absolute;
     animation-fill-mode: forwards;
 
-}
+} */
 
-@keyframes fade-to-black {
-    from {background: linear-gradient(to bottom, rgb(82, 82, 82), rgb(0, 0, 0));}
+/* @keyframes fade-to-black {
+    from {background: linear-gradient(to bottom, rgb(71, 0, 71), rgb(43, 36, 139));}
     to {background: rgb(0, 0, 0);}
-}
+} */
 
 @keyframes fade {
-    0% {opacity: 100%;}
+    /* 0% {opacity: 100%;}
     25% {opacity: 50%;}
     50% {opacity: 25%;}
-    100% {opacity: 0%;}
+    100% {opacity: 0%;} */
+    0% {background: linear-gradient(to bottom, rgb(151, 2, 151), rgb(255, 166, 0));}
+    25% {background: linear-gradient(to top, rgba(255, 166, 0), rgb(71, 0, 71));}
+    50% {background: linear-gradient(to bottom, rgba(71, 0, 71), rgb(17, 12, 77));}
+    100% {background: linear-gradient(to top,  rgb(17, 12, 77), rgb(0, 0, 0));}
 }
 
 .moon {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.829);
     position: absolute;
@@ -110,4 +114,6 @@
 
 .mountains {
     position: absolute;
+    background: transparent;
+    /* bottom: 0; */
 }
