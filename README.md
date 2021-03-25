@@ -13,7 +13,8 @@ a web app made with CSS animations to simulate the sun going down
 -gelissa
 
 
-mountains![image](https://user-images.githubusercontent.com/37284788/112424081-2a12da00-8d0a-11eb-8fcd-8059120fe12f.png)
+
+<3[image](https://user-images.githubusercontent.com/37284788/112424081-2a12da00-8d0a-11eb-8fcd-8059120fe12f.png)
 
 
 
